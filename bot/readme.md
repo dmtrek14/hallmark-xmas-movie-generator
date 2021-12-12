@@ -1,0 +1,1 @@
+Folder for bot, corpus, crawler, and any other files needed for training
