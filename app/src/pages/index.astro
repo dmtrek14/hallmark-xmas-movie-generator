@@ -1,6 +1,7 @@
 ---
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 import DarkMode from '../components/DarkMode.astro'
+import MovieGenerator from '../components/MovieGenerator.jsx'
 ---
 
 <DefaultLayout title="Home">
@@ -14,15 +15,10 @@ import DarkMode from '../components/DarkMode.astro'
   <section class="padding-32 color-primary">
     <div class="container">
       <h2 class="margin-16 bottom">Get your own bot-generated Hallmark Christmas movie</h2>
-      <p>UNDER CONSTRUCTION!</p>
+     
     </div>
     <div class="container margin-16" data-auto-grid="1">
-      <div class="box">
-       <button role="button" class="darkmode-toggle">Generate Hallmark Christmas Movie</button>
-      </div>
-      <div class="box">
-      <!-- <p>generated movie</p> -->
-      </div>
+      <MovieGenerator client:load />
     </div>
   </section>
 
